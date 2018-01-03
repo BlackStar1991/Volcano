@@ -158,18 +158,20 @@ textarea {
   position: relative;
   clear: both;
   width: 100%;
+  padding: 0 15px;
   margin-top: 35px;
   margin-bottom: 10px;
+  margin-left: -15px;
+  border: 2px solid transparent;
 }
 
 .bl_nav__point{
   position: relative;
   width: 100%;
   min-height: 28px;
-  border-right: 2px solid #000;
-  &:last-of-type button{
-    border: none;
-  }
+  box-sizing: border-box;
+  border-left: 2px solid #000;
+  //border: 2px solid #000;
   a, button{
     position: relative;
     display: block;
@@ -187,36 +189,43 @@ textarea {
       text-decoration: underline;
     }
   }
-
-
   button{
     padding-right: 25px;
   }
-  
 }
+
+.correct_leftBorder{
+  border-left: none;
+}
+
 
 .bl_companies__full{
   clear: both;
   display: block;
   width: 100%;
-  padding: 15px 13px;
-
-  border: 2px solid $color_btn1;
   background-color: #fff;
-}
 
-
-.bl_companies__item{
-  width: 100%;
-
-  position: relative;
-  .col-md-five{
+  .col-md-5ths + a,
+  .col-md-5ths + div{
     height: 100%;
     min-height: 116px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
+    padding-left: 5px;
+    border-left:2px solid $color_btn1;
   }
+}
+
+
+.bl_companies__item{
+  width: 100%;
+  position: relative;
+  border: 2px solid $color_btn1;
+  padding: 15px 13px;
+  box-sizing: border-box;
+  margin-bottom: 4px;
 
 }
 
@@ -269,14 +278,19 @@ textarea {
 }
 
 .bl_companies__recoil{
+  position: relative;
   width: 100%;
-
   color: $color_blue;
   font-size: 37px;
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0.74px;
   text-align: center;
+  &:after{
+    content:" %";
+    font-size: inherit;
+    color: inherit;
+  }
 }
 
 
@@ -364,6 +378,40 @@ textarea {
 }
 
 
+
+.bl_ceo{
+  position: relative;
+  width: 100%;
+
+}
+
+.bl_ceo__title{
+  display: block;
+  width: 100%;
+  margin: 35px auto 25px;
+  color: #282828;
+  font-size: 18px;
+
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.36px;
+}
+
+.bl_ceo__text{
+  width: 100%;
+  margin:15px auto;
+  color: #282828;
+  font-size: 12px;
+
+  line-height: 17px;
+  letter-spacing: 0.24px;
+}
+
+.bl_ceo__img{
+  width: 100%;
+
+}
 
 
 

@@ -23,13 +23,15 @@
     /*! normalize.css v3.0.3 */
     html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}legend,td,th{padding:0}
     /* castom bootstrap*/
-    .col-xs-five,.col-sm-five,.col-md-five,.col-lg-five{position:relative;min-height:1px;padding-right:10px;padding-left:10px}.col-xs-five{width:20%;float:left}@media (min-width: 768px){.col-sm-five{width:20%;float:left}}@media (min-width: 992px){.col-md-five{width:20%;float:left}}@media (min-width: 1200px){.col-lg-five{width:20%;float:left}}
+    /*.col-xs-five,.col-md-5ths,.col-md-5ths,.col-lg-five{position:relative;min-height:1px;padding-right:10px;padding-left:10px}.col-xs-five{width:20%;float:left}@media (min-width: 768px){.col-md-5ths{width:20%;float:left}}@media (min-width: 992px){.col-md-5ths{width:20%;float:left}}@media (min-width: 1200px){.col-lg-five{width:20%;float:left}}*/
+
     </style>
     <!-- @formatter:on -->
 
 
     <link rel="stylesheet" href="css/libs.min.css">
 
+    
     <link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -51,131 +53,291 @@
     <main class="main">
         <div class="mainWrapper">
             <div class="container">
-                <nav class="bl_nav__full hidden-xs hidden-sm">
+                <nav class="bl_nav__full hidden-xs hidden-sm clearfix">
                     <div class="row">
-                        <div class="col-md-five">
-                            <div class="bl_nav__point">
-                                <a href="#">бренл</a>
+
+                            <div class="col-md-5ths">
+                                <div class="bl_nav__point correct_leftBorder">
+                                    <a href="#">бренд</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-five">
-                            <div class="bl_nav__point">
-                                <a href="#">лучший бонус </a>
+                            <div class="col-md-5ths">
+                                <div class="bl_nav__point">
+                                    <a href="#">лучший бонус</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-five">
-                            <div class="bl_nav__point">
-                                <button class="js-recoil icon-sorter" type="button">отдача</button>
+                            <div class="col-md-5ths">
+                                <div class="bl_nav__point">
+                                    <button class="js-recoil icon-sorter" type="button" title="Сортировка по отдаче">отдача</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-five">
-                            <div class="bl_nav__point">
-                                <button class="js-rating icon-sorter" type="button">рейтинг</button>
+
+
+                            <div class="col-md-5ths">
+                                <div class="bl_nav__point">
+                                    <button class="js-rating icon-sorter" type="button" title="Сортировка по рейтингу">рейтинг</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-five">
-                            <div class="bl_nav__point">
-                                <a href="#">ссылки </a>
+                            <div class="col-md-5ths">
+                                <div class="bl_nav__point">
+                                    <a href="#">ссылки </a>
+                                </div>
                             </div>
-                        </div>
+
                     </div>
                 </nav>
                 <ul class="bl_companies__full clearfix">
                     <li class="bl_companies__item">
-                        <div class="col-md-five">
-                            <a class="bl_companies__logo" href="#">
-                                <img class="bl_companies__img" src="image/volcano.png" alt="">
-                                <p class="bl_companies__name">Вулкан казино</p>
-                            </a>
-                        </div>
-                        <div class="col-md-five">
-                            <div class="bl_companies__bonus">
-                                <p class="bl_companies__bonus_procent">100%</p>
-                                <p class="bl_companies__bonus_view"> на депозит</p>
-                                <p class="bl_companies__bonus_option"> +40 FS в Book of Ra</p>
-                            </div>
+                        <div class="row">
+
+                                <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                    <a class="bl_companies__logo" href="#">
+                                        <img class="bl_companies__img" src="image/volcano.png" alt="">
+                                        <p class="bl_companies__name">Вулкан казино</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_companies__bonus">
+                                        <p class="bl_companies__bonus_procent">100%</p>
+                                        <p class="bl_companies__bonus_view"> на депозит</p>
+                                        <p class="bl_companies__bonus_option"> +40 FS в Book of Ra</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_recoil">
+                                        <p class="bl_companies__recoil">45,4</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_companies__rating">
+                                        <span class="bl_companies__rating_current">2</span>
+                                        <span class="bl_companies__element">из</span>
+                                        <span class="bl_companies__rating_full">5</span>
+                                        <div class="bl_shortReviews">
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__empty"></div>
+                                            <div class="icon_star__empty"></div>
+                                            <div class="icon_star__empty"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div>
+                                        <a class="link_goToCasino" href="#"><span>перейти в </span>казино</a>
+                                        <a class="link_readReview" href="#"><span>читать </span>обзор</a>
+                                    </div>
+
+                                </div>
 
                         </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
 
-                        <div class="col-md-five">
-                            <p class="bl_companies__recoil">97,3%</p>
+                                <div class=" col-xs-12  col-sm-12 col-md-5ths">
+                                    <a class="bl_companies__logo" href="#">
+                                        <img class="bl_companies__img" src="image/volcano.png" alt="">
+                                        <p class="bl_companies__name">Вулкан казино</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_companies__bonus">
+                                        <p class="bl_companies__bonus_procent">100%</p>
+                                        <p class="bl_companies__bonus_view"> на депозит</p>
+                                        <p class="bl_companies__bonus_option"> +40 FS в Book of Ra</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_recoil">
+                                        <div class="bl_recoil">
+                                            <p class="bl_companies__recoil">87,3</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_companies__rating">
+                                        <span class="bl_companies__rating_current">4</span>
+                                        <span class="bl_companies__element">из</span>
+                                        <span class="bl_companies__rating_full">5</span>
+                                        <div class="bl_shortReviews">
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__empty"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <a class="link_goToCasino" href="#"><span>перейти в </span>казино</a>
+                                    <a class="link_readReview" href="#"><span>читать </span>обзор</a>
+                                </div>
+
                         </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
 
-                        <div class="col-md-five">
-                            <div class="bl_companies__rating">
-                                <span class="bl_companies__rating_current">5</span>
-                                <span class="bl_companies__element">из</span>
-                                <span class="bl_companies__rating_full">5</span>
-                                <div class="bl_shortReviews">
-                                    <div class="icon_star__full"></div>
-                                    <div class="icon_star__full"></div>
-                                    <div class="icon_star__full"></div>
-                                    <div class="icon_star__full"></div>
-                                    <div class="icon_star__empty"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                    <a class="bl_companies__logo" href="#">
+                                        <img class="bl_companies__img" src="image/volcano.png" alt="">
+                                        <p class="bl_companies__name">Вулкан казино</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_companies__bonus">
+                                        <p class="bl_companies__bonus_procent">100%</p>
+                                        <p class="bl_companies__bonus_view"> на депозит</p>
+                                        <p class="bl_companies__bonus_option"> +40 FS в Book of Ra</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_recoil">
+                                        <p class="bl_companies__recoil">88,3</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_companies__rating">
+                                        <span class="bl_companies__rating_current">4</span>
+                                        <span class="bl_companies__element">из</span>
+                                        <span class="bl_companies__rating_full">5</span>
+                                        <div class="bl_shortReviews">
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__empty"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <a class="link_goToCasino" href="#"><span>перейти в </span>казино</a>
+                                    <a class="link_readReview" href="#"><span>читать </span>обзор</a>
+                                </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+
+                                <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                    <a class="bl_companies__logo" href="#">
+                                        <img class="bl_companies__img" src="image/volcano.png" alt="">
+                                        <p class="bl_companies__name">Вулкан казино</p>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_companies__bonus">
+                                        <p class="bl_companies__bonus_procent">100%</p>
+                                        <p class="bl_companies__bonus_view"> на депозит</p>
+                                        <p class="bl_companies__bonus_option"> +40 FS в Book of Ra</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_recoil">
+                                        <p class="bl_companies__recoil">77,2</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <div class="bl_companies__rating">
+                                        <span class="bl_companies__rating_current">3</span>
+                                        <span class="bl_companies__element">из</span>
+                                        <span class="bl_companies__rating_full">5</span>
+                                        <div class="bl_shortReviews">
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__full"></div>
+                                            <div class="icon_star__empty"></div>
+                                            <div class="icon_star__empty"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                    <a class="link_goToCasino" href="#"><span>перейти в </span>казино</a>
+                                    <a class="link_readReview" href="#"><span>читать </span>обзор</a>
                                 </div>
                             </div>
-                            
-                        </div>
-
-                        <div class="col-md-five">
-                            <a class="link_goToCasino" href="#"><span>перейти в</span>казино</a>
-                            <a class="link_readReview" href="#"><span>читать</span>обзор</a>
-                        </div>
-
 
                     </li>
                 </ul>
 
 
             </div>
+
+            <div class="bl_ceo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="bl_ceo__title">Онлайн казино Вулкан в России - лидер среди азартных игровых
+                                клубов</h2>
+                            <p class="bl_ceo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est
+                                ante, scelerisque eu dui ac, accumsan hendrerit dui. Donec sollicitudin ex in quam
+                                laoreet feugiat. Etiam rhoncus tellus ut consequat hendrerit. Vestibulum sit amet
+                                lacinia nulla. Morbi suscipit enim ligula, vel feugiat ipsum luctus in. Nunc a molestie
+                                est, ac malesuada ligula. Quisque ante mi, congue nec urna eget, egestas dictum leo.
+                                Vivamus vitae placerat nunc, nec efficitur enim. Vestibulum volutpat enim in rutrum
+                                tempus. Ut mattis ipsum vitae magna hendrerit, quis semper libero accumsan.</p>
+                            <img class="bl_ceo__img" src="image/bg_casino.png" alt="casino">
+                            <p class="bl_ceo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est
+                                ante, scelerisque eu dui ac, accumsan hendrerit dui. Donec sollicitudin ex in quam
+                                laoreet feugiat. Etiam rhoncus tellus ut consequat hendrerit. Vestibulum sit amet
+                                lacinia nulla. Morbi suscipit enim ligula, vel feugiat ipsum luctus in. Nunc a molestie
+                                est, ac malesuada ligula. Quisque ante mi, congue nec urna eget, egestas dictum leo.
+                                Vivamus vitae placerat nunc, nec efficitur enim. Vestibulum volutpat enim in rutrum
+                                tempus. Ut mattis ipsum vitae magna hendrerit, quis semper libero accumsan.</p>
+                            <img class="bl_ceo__img" src="image/bg_casino.png" alt="casino">
+                            <p class="bl_ceo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est
+                                ante, scelerisque eu dui ac, accumsan hendrerit dui. Donec sollicitudin ex in quam
+                                laoreet feugiat. Etiam rhoncus tellus ut consequat hendrerit. Vestibulum sit amet
+                                lacinia nulla. Morbi suscipit enim ligula, vel feugiat ipsum luctus in. Nunc a molestie
+                                est, ac malesuada ligula. Quisque ante mi, congue nec urna eget, egestas dictum leo.
+                                Vivamus vitae placerat nunc, nec efficitur enim. Vestibulum volutpat enim in rutrum
+                                tempus. Ut mattis ipsum vitae magna hendrerit, quis semper libero accumsan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </main>
     <!-- ---------------------------------------- FOOTER --------------------------------------------------------- -->
     <footer class="footer">
-
+        <div class="bl_footer__wrapper">
+        <p class="bl_footer__text">2018 Вулкан казино Россия - Все права защищены</p>
+        <p class="bl_footer__links">
+            <a class="bl_footer__link" href="#">Мы в Google+</a>
+            <a class="bl_footer__link" href="#">| Мы в Facebook</a>
+            <a class="bl_footer__link" href="#">| Мы в Twitter</a>
+        </p>
+        <p class="bl_footer__text">По вопросам сотрудничества обращаться:<a class="bl_footer__link" href="mailto:editor@vulkanvulkan.com">editor@vulkanvulkan.com</a></p>
+        </div>
     </footer>
-</div>
-
-
-<!-- ANCOR -->
-
-<div class="bl_ancor hidden-xs hidden">
-    <div class="bl_wrappen">
-        <a class="bl_ancor__link bl_ancor__icon" href="#header">Вверх</a>
-    </div>
-</div>
-
-<!-- POPUP BIFORE ADD TO SHOPBAG-->
-
-<div class="popup_likeShopbag hidden">
-    <div class="wrapperBlock">
-        <button class="popup_likeShopbag__close">
-            <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
-        </button>
-        <p class="popup_likeShopbag__text popup_likeShopbag__text_main">Подтверждение</p>
-
-        <div class="popup_likeShopbag__product">
-            <p class="shoppingBasket_product__name">Электро-сеть ываыв ыв аываы аыв аываываыва ываываыва ываываываываыва
-                ываыва</p>
-        </div>
-        <p class="popup_likeShopbag__text  popup_likeShopbag__text_main">добавлен в корзину</p>
-
-        <div class="popup_likeShopbag__buttons">
-            <button class="button_buyProduct popup_likeShopbag__continueBuying">
-                <span class="button_buyProduct__text popup_likeShopbag__buttons_text">Продолжить покупки</span>
-            </button>
-            <div class="button_buyProduct popup_likeShopbag__goToShopbag">
-                <a href="#" class="button_buyProduct__text popup_likeShopbag__goToShopbag_text">Оформление заказа</a>
-            </div>
-        </div>
-
-    </div>
 </div>
 
 
 <script src="libs/jquery.min.js"></script>
 
-<script src="js/libs.min.js"></script>
+
 
 <script src="js/common.min.js"></script>
 

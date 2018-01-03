@@ -11,10 +11,63 @@
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
 
+  .bl_recoil{
+    margin-top: -34px;
+  }
+
+  .bl_companies__bonus{
+    &:before{
+      content: "Лучший бонус";
+      color:$color_textMain;
+      font-size:inherit;
+      font-weight:600;
+    }
+  }
+
+  .bl_companies__recoil{
+    &:before{
+      display: block;
+      vertical-align: top;
+      content: "Отдача";
+      color:$color_textMain;
+      font-size:18px;
+      line-height: 18px;
+      font-weight:600;
+    }
+  }
+
+  .bl_companies__rating{
+    &:before{
+      display: block;
+      vertical-align: top;
+      content: "Рейтинг";
+      color:$color_textMain;
+      font-size:18px;
+      line-height: 18px;
+      font-weight:600;
+    }
+  }
+
+
+  .bl_companies__full{
+    .col-md-5ths > *{
+      display: block;
+    }
+  }
+  .bl_companies__full .col-md-5ths+a, .bl_companies__full .col-md-5ths+div{
+    border-left: none;
+  }
 }
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {
+
+
+
+  .link_goToCasino span,
+  .link_readReview span{
+    display: none;
+  }
 
 }
 
