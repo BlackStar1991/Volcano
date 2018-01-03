@@ -1,8 +1,21 @@
 .header{
   width: 100%;
   min-height:216px;
-  background: url("bg_flag1.png") 50% 50% no-repeat;
+  background: url("/image/bg_flag1.png") 50% 50% no-repeat;
+  background-size: cover;
 }
 
+
+.logo_link{
+  display: block;
+  margin: 0 auto;
+  width: 264px;
+  height: 178px;
+}
+
+.logo_img{
+  display: block;
+  margin: 19px auto;
+}
 
 

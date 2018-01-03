@@ -25,8 +25,9 @@ body {
 body {
   position: relative;
   font-family: "Roboto - Thin", sans-serif;
+  color: #000;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
   min-width: 320px;
 
 
@@ -151,9 +152,221 @@ textarea {
   padding-left: 0!important;
 }
 
-.block_white {
+
+
+.bl_nav__full{
+  position: relative;
+  clear: both;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.bl_nav__point{
+  position: relative;
+  width: 100%;
+  min-height: 28px;
+  border-right: 2px solid #000;
+  &:last-of-type button{
+    border: none;
+  }
+  a, button{
+    position: relative;
+    display: block;
+    margin:  0 auto;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    background: none;
+    font-weight: 700;
+    transition: .2s all;
+    &:hover,
+    &:focus{
+      transition: .2s all;
+      color: $color_blue;
+      text-decoration: underline;
+    }
+  }
+
+
+  button{
+    padding-right: 25px;
+  }
+  
+}
+
+.bl_companies__full{
+  clear: both;
+  display: block;
+  width: 100%;
+  padding: 15px 13px;
+
+  border: 2px solid $color_btn1;
   background-color: #fff;
 }
+
+
+.bl_companies__item{
+  width: 100%;
+
+  position: relative;
+  .col-md-five{
+    height: 100%;
+    min-height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+
+.bl_companies__img{
+  display: block;
+  margin: 0 auto;
+}
+
+.bl_companies__name{
+  color: $color_blue;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 0.33px;
+  font-weight: 600;
+}
+
+
+.bl_companies__bonus{
+
+  color: $color_blue;
+  font-weight: 400;
+  text-align: center;
+}
+
+.bl_companies__bonus_procent{
+  font-size: 37px;
+  letter-spacing: 0.74px;
+  line-height: 40px;
+}
+.bl_companies__bonus_view{
+  font-size: 15px;
+  letter-spacing: 0.34px;
+  line-height: 18px;
+}
+.bl_companies__bonus_option{
+  letter-spacing: 0.3px;
+  line-height: 18px;
+}
+
+.icon-sorter{
+  &:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include sprite($icon-sorter);
+    z-index: 2;
+  }
+}
+
+.bl_companies__recoil{
+  width: 100%;
+
+  color: $color_blue;
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.74px;
+  text-align: center;
+}
+
+
+.bl_companies__rating{
+  text-align: center;
+  color: $color_blue;
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.74px;
+
+}
+.bl_companies__element{
+  font-size: 21px;
+  letter-spacing: 0.42px;
+}
+
+
+
+.bl_shortReviews {
+
+  margin: 0 auto;
+  height: 20px;
+  width: 105px;
+
+  div {
+    position: relative;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+    box-sizing: border-box;
+  }
+}
+
+
+.icon_star__full,
+.icon_star__empty {
+  &:after {
+    content: "\2605";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color_yellow;
+    font-size: 28px;
+  }
+}
+
+.icon_star__empty {
+  &:after {
+    content: "\2606";
+  }
+}
+
+
+
+.link_goToCasino,
+.link_readReview{
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 204px;
+  height: 38px;
+  background-color: $color_btn1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.36px;
+  transition: all, .2s;
+
+  &:hover,
+  &:focus{
+    transition: all, .2s;
+    background-color: $color_btn2;
+  }
+}
+
+.link_readReview{
+  margin: 6px auto;
+  background-color: $color_btn2;
+}
+
+
+
+
+
 /*********************************************/
 /*HEADER*/
 /*********************************************/

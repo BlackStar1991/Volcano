@@ -8,10 +8,12 @@
     "normalize-css": "normalize.css#^3.0.3",
     "jquery": "^3.2.1",
     "bootstrap": "^3.3.7",
-    "font-awesome": "fontawesome#^4.7.0",
     "owl.carousel": "owl-carousel2#^2.2.1",
     "fancybox": "^3.1.20",
-    "jquery.maskedinput": "^1.4.1"
-
+    "jquery.maskedinput": "^1.4.1",
+    "zoomove": "^1.2.0"
+  },
+  "devDependencies": {
+    "zoomove": "^1.2.0"
   }
 }

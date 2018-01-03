@@ -76,7 +76,7 @@ gulp.task('sass', ['sprite'], function () {
 gulp.task('js', function () {
     return gulp.src('./app/js/*.js')                 // get the files
         .pipe(browserSync.stream())
-    // browsersync stream
+                                   // browsersync stream
 });
 
 /*********************************************/
