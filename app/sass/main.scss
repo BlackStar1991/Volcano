@@ -227,7 +227,21 @@ textarea {
   box-sizing: border-box;
   margin-bottom: 4px;
 
+  //@for $i from 1 through 5 {
+  //&:nth-child(#{$i}) {
+  //    animation: scallingBlocks 0.3s linear (100ms*$i);
+  //    animation-fill-mode: forwards;
+  //  }
+  //}
+
 }
+
+
+@keyframes scallingBlocks {
+  0%{transform: scale(0.3);}
+  100%{transform: scale(1);}
+}
+
 
 .bl_companies__img{
   display: block;
