@@ -26,15 +26,19 @@
     <!-- @formatter:on -->
 
 
-    <!-- build:css css/libs.min.css -->
-    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
-    <!-- endbuild -->
+    <!--&lt;!&ndash; build:css css/libs.min.css &ndash;&gt;-->
+    <!--<link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">-->
+    <!--&lt;!&ndash; endbuild &ndash;&gt;-->
 
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">-->
+
     <!-- build:css css/main.min.css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
 
+    <link href="https://fonts.googleapis.com/css?family=Montez|Roboto" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -47,7 +51,7 @@
     <!-- ---------------------------------------- HEADER -------------------------------------------------------- -->
     <header id="header" class="header">
         <div class="mainWrapper">
-            <a class="logo_link" href="#"><img class="logo_img" src="image/logo.png" alt="logo volcano"></a>
+            <h1 class="header_title">The best Soviet cartoons</h1>
         </div>
     </header>
     <!-- ----------------------------------------- MAIN --------------------------------------------------------- -->
@@ -57,325 +61,1851 @@
                 <nav class="bl_nav__full hidden-xs hidden-sm clearfix">
                     <div class="row">
 
-                            <div class="col-md-5ths">
-                                <div class="bl_nav__point correct_leftBorder">
-                                    <a href="#">бренд</a>
-                                </div>
+                        <div class="col-md-5ths">
+                            <div class="bl_nav__point correct_leftBorder">
+                                <p>Cartoon</p>
                             </div>
-                            <div class="col-md-5ths">
-                                <div class="bl_nav__point">
-                                    <a href="#">лучший бонус</a>
-                                </div>
+                        </div>
+                        <div class="col-md-5ths">
+                            <div class="bl_nav__point">
+                                <button class="js-btnName icon-sorter" type="button" title="name of cartoon">Name
+                                </button>
                             </div>
-                            <div class="col-md-5ths">
-                                <div class="bl_nav__point">
-                                    <button class="js-recoil icon-sorter" type="button" title="Сортировка по отдаче">отдача</button>
-                                </div>
+                        </div>
+                        <div class="col-md-5ths">
+                            <div class="bl_nav__point">
+                                <button class="js-btnIMDB icon-sorter" type="button" title="imdb Rating">imdb Rating
+                                </button>
                             </div>
+                        </div>
 
 
-                            <div class="col-md-5ths">
-                                <div class="bl_nav__point">
-                                    <button class="js-rating icon-sorter" type="button" title="Сортировка по рейтингу">рейтинг</button>
-                                </div>
+                        <div class="col-md-5ths">
+                            <div class="bl_nav__point">
+                                <button class="js-btnMyRating icon-sorter" type="button" title="My Rating">My Rating
+                                </button>
                             </div>
-                            <div class="col-md-5ths">
-                                <div class="bl_nav__point">
-                                    <a href="#">ссылки </a>
-                                </div>
+                        </div>
+                        <div class="col-md-5ths">
+                            <div class="bl_nav__point">
+                                <p href="#">Links </p>
                             </div>
+                        </div>
 
                     </div>
                 </nav>
                 <ul class="bl_companies__full clearfix">
                     <li class="bl_companies__item">
                         <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-5ths">
-                                    <a class="bl_companies__logo" href="#">
-                                        <img class="bl_companies__img" src="image/volcano.png" alt="">
-                                        <p class="bl_companies__name">Вулкан казино</p>
-                                    </a>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_companies__bonus">
-                                        <p class="bl_companies__bonus_procent">100%</p>
-                                        <p class="bl_companies__bonus_view"> на депозит</p>
-                                        <p class="bl_companies__bonus_option"> +40 FS в Book of Ra</p>
-                                    </div>
-
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_recoil">
-                                        <p class="bl_companies__recoil">45,4</p>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_companies__rating">
-                                        <span class="bl_companies__rating_current">2</span>
-                                        <span class="bl_companies__element">из</span>
-                                        <span class="bl_companies__rating_full">5</span>
-                                        <div class="bl_shortReviews">
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__empty"></div>
-                                            <div class="icon_star__empty"></div>
-                                            <div class="icon_star__empty"></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div>
-                                        <a class="link_goToCasino" href="#"><span>перейти в </span>казино</a>
-                                        <a class="link_readReview" href="#"><span>читать </span>обзор</a>
-                                    </div>
-
-                                </div>
-
-                        </div>
-                    </li>
-                    <li class="bl_companies__item">
-                        <div class="row">
-
-                                <div class=" col-xs-12  col-sm-12 col-md-5ths">
-                                    <a class="bl_companies__logo" href="#">
-                                        <img class="bl_companies__img" src="image/volcano.png" alt="">
-                                        <p class="bl_companies__name">Вулкан казино</p>
-                                    </a>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_companies__bonus">
-                                        <p class="bl_companies__bonus_procent">100%</p>
-                                        <p class="bl_companies__bonus_view"> на депозит</p>
-                                        <p class="bl_companies__bonus_option"> +40 FS в Book of Ra</p>
-                                    </div>
-
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_recoil">
-                                        <div class="bl_recoil">
-                                            <p class="bl_companies__recoil">87,3</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_companies__rating">
-                                        <span class="bl_companies__rating_current">4</span>
-                                        <span class="bl_companies__element">из</span>
-                                        <span class="bl_companies__rating_full">5</span>
-                                        <div class="bl_shortReviews">
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__empty"></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <a class="link_goToCasino" href="#"><span>перейти в </span>казино</a>
-                                    <a class="link_readReview" href="#"><span>читать </span>обзор</a>
-                                </div>
-
-                        </div>
-                    </li>
-                    <li class="bl_companies__item">
-                        <div class="row">
-
-                                <div class="col-xs-12 col-sm-12 col-md-5ths">
-                                    <a class="bl_companies__logo" href="#">
-                                        <img class="bl_companies__img" src="image/volcano.png" alt="">
-                                        <p class="bl_companies__name">Вулкан казино</p>
-                                    </a>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_companies__bonus">
-                                        <p class="bl_companies__bonus_procent">100%</p>
-                                        <p class="bl_companies__bonus_view"> на депозит</p>
-                                        <p class="bl_companies__bonus_option"> +40 FS в Book of Ra</p>
-                                    </div>
-
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_recoil">
-                                        <p class="bl_companies__recoil">88,3</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_companies__rating">
-                                        <span class="bl_companies__rating_current">4</span>
-                                        <span class="bl_companies__element">из</span>
-                                        <span class="bl_companies__rating_full">5</span>
-                                        <div class="bl_shortReviews">
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__empty"></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <a class="link_goToCasino" href="#"><span>перейти в </span>казино</a>
-                                    <a class="link_readReview" href="#"><span>читать </span>обзор</a>
-                                </div>
-
-                        </div>
-                    </li>
-                    <li class="bl_companies__item">
-                        <div class="row">
-
-                                <div class="col-xs-12 col-sm-12 col-md-5ths">
-                                    <a class="bl_companies__logo" href="#">
-                                        <img class="bl_companies__img" src="image/volcano.png" alt="">
-                                        <p class="bl_companies__name">Вулкан казино</p>
-                                    </a>
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_companies__bonus">
-                                        <p class="bl_companies__bonus_procent">100%</p>
-                                        <p class="bl_companies__bonus_view"> на депозит</p>
-                                        <p class="bl_companies__bonus_option"> +40 FS в Book of Ra</p>
-                                    </div>
-
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_recoil">
-                                        <p class="bl_companies__recoil">77,2</p>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <div class="bl_companies__rating">
-                                        <span class="bl_companies__rating_current">3</span>
-                                        <span class="bl_companies__element">из</span>
-                                        <span class="bl_companies__rating_full">5</span>
-                                        <div class="bl_shortReviews">
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__full"></div>
-                                            <div class="icon_star__empty"></div>
-                                            <div class="icon_star__empty"></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                    <a class="link_goToCasino" href="#"><span>перейти в </span>казино</a>
-                                    <a class="link_readReview" href="#"><span>читать </span>обзор</a>
-                                </div>
-                            </div>
-
-                    </li>
-                    <li class="bl_companies__item">
-                        <div class="row">
-
                             <div class="col-xs-12 col-sm-12 col-md-5ths">
-                                <a class="bl_companies__logo" href="#">
-                                    <img class="bl_companies__img" src="image/volcano.png" alt="">
-                                    <p class="bl_companies__name">Вулкан казино</p>
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt4691334/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BMWU1OTcyYjMtNzJlOS00YWRiLTg2NDEtM2U2NGVhZDY4OTMyXkEyXkFqcGdeQXVyMzU3Nzk4MDQ@._V1_.jpg"
+                                         alt="Eneida">
                                 </a>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-5ths">
                                 <div class="bl_companies__bonus">
-                                    <p class="bl_companies__bonus_procent">101%</p>
-                                    <p class="bl_companies__bonus_view"> на депозит</p>
-                                    <p class="bl_companies__bonus_option"> +40 FS в Book of Ra</p>
+                                    <p class="bl_companies__bonus_name">Eneida</p>
                                 </div>
 
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                <div class="bl_recoil">
-                                    <p class="bl_companies__recoil">99</p>
-                                </div>
-                            </div>
-
-
                             <div class="col-xs-6 col-sm-6 col-md-5ths">
                                 <div class="bl_companies__rating">
-                                    <span class="bl_companies__rating_current">5</span>
-                                    <span class="bl_companies__element">из</span>
-                                    <span class="bl_companies__rating_full">5</span>
+                                    <span class="bl_companies__rating_imdb js-imdb">8,4</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
                                     <div class="bl_shortReviews">
-                                        <div class="icon_star__full"></div>
-                                        <div class="icon_star__full"></div>
-                                        <div class="icon_star__full"></div>
-                                        <div class="icon_star__full"></div>
-                                        <div class="icon_star__full"></div>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-myRating">8</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
                                     </div>
                                 </div>
 
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-5ths">
-                                <a class="link_goToCasino" href="#"><span>перейти в </span>казино</a>
-                                <a class="link_readReview" href="#"><span>читать </span>обзор</a>
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=IZ8n9Ma42SU"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview" href="http://www.imdb.com/title/tt4691334/"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
                             </div>
                         </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0122227/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BZDU4OThmMWUtMDgyYS00ZDMxLWIzNjctNGZkOGQxNjcwNjFhXkEyXkFqcGdeQXVyNjUzMjMzNTY@._V1_SY1000_CR0,0,666,1000_AL_.jpg"
+                                         alt="Ostrov sokrovishch">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">
+                                        Treasure Island</p>
+                                    <p class="name_min">Ostrov sokrovishch</p>
 
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,4</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">10</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=QKRG7PF73UA"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://en.wikipedia.org/wiki/Treasure_Island_(1988_film)" target="_blank"><span>read</span>
+                                        review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0216434/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BYzExYzhkYmEtY2U4YS00YjZhLTk4N2YtZDA3MTM2YWI4ZjA4XkEyXkFqcGdeQXVyNjMxODMyODU@._V1_SY1000_CR0,0,682,1000_AL_.jpg"
+                                         alt="Once Upon a Dog">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Once Upon a Dog</p>
+                                    <p class="name_min">Zhil-byl pyos</p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,6</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">7</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=2XEoN5uFKX4"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview" href="https://en.wikipedia.org/wiki/Once_Upon_a_Dog"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0211729/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BZWI2MjAwNTEtYzNhOC00YTFmLTlkNzktOWY0MDIzYTVhZTU2L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTQ0MTY3MQ@@._V1_.jpg"
+                                         alt="Winnie-the-Pooh">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Winnie-the-Pooh</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,4</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">8,2</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=yo0B5c5C5G8"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://en.wikipedia.org/wiki/Winnie-the-Pooh_(1969_film)" target="_blank"><span>read</span>
+                                        review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0189160/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTRlY2IzNTUtZDU4OS00MmVmLWJmMzMtMDA1YmQ1ZTRiM2Q5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTQ0MTY3MQ@@._V1_.jpg"
+                                         alt="Troe iz Prostokvashino">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Three from Prostokvashino</p>
+                                    <p class="name_min">Troe iz Prostokvashino</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,3</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">6,9</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=eax0iJ_MpSM"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://en.wikipedia.org/wiki/Three_from_Prostokvashino"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0211653/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BYWUyZjlkMjUtY2NlZS00MjIxLTkyYTEtNDhiZjcwNTY3ODMxXkEyXkFqcGdeQXVyNDg5Njk0Mjk@._V1_.jpg"
+                                         alt="Tayna tretey planety">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">The Mystery of the Third Planet</p>
+                                    <p class="name_min">Tayna tretey planety</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,1</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">8,5</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=2TAmISW76Rk"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://en.wikipedia.org/wiki/The_Mystery_of_the_Third_Planet"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0211653/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BNGU3NTRiNGEtNzVhNC00ODg4LWE3ZmEtZGY2ZTBkYjkzZjM5XkEyXkFqcGdeQXVyNjExODE1MDc@._V1_.jpg"
+                                         alt="The Adventures Of Captain Wrongel">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">The Adventures Of Captain Wrongel</p>
+                                    <p class="name_min">Priklyucheniya kapitana Vrungelyay</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,3</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">7,5</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=V-6dc62AGuU"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://en.wikipedia.org/wiki/Adventures_of_Captain_Wrongel"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0211653/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BMGY5ODY0MzgtNjhhNS00NDk4LWIxOWUtMGY5ZDgzYzM0NTljXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_.jpg"
+                                         alt="Junior and Karlson">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Junior and Karlson</p>
+                                    <p class="name_min">Malysh i Karlson </p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,2</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">7,3</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=SMnF7ro6URo"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview" href="https://mubi.com/films/junior-and-karlson"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0211653/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BNDhjZGM0Y2EtNGU4OS00OTc5LWE3NjItZTA1NWI4OTNjZTQyXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_.jpg"
+                                         alt="Investigation Held by Kolobki">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Investigation Held by Kolobki</p>
+                                    <p class="name_min">Sledstvie vedut Kolobki</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,1</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">8,7</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=A1JrGUO6Ok0"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://en.wikipedia.org/wiki/Investigation_Held_by_Kolobki"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0073099/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BMGFlMzhhMmMtOGNhZC00OGE4LTg3NmEtMTdjNWNiZjhlMDg0XkEyXkFqcGdeQXVyMjExNjgyMTc@._V1_.jpg"
+                                         alt="Hedgehog in the Fog">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Hedgehog in the Fog</p>
+                                    <p class="name_min">Yozhik v tumane</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,3</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">6,7</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=ThmaGMgWRlY"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview" href="https://en.wikipedia.org/wiki/Hedgehog_in_the_Fog"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt1256533/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BMzI2NTdkNWItZDI1Ni00YzBiLWExNGEtZDY0YjdlYmFmYTA0XkEyXkFqcGdeQXVyNTMyODQ1Njk@._V1_.jpg"
+                                         alt="About Sidorov Vova">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">About Sidorov Vova</p>
+                                    <p class="name_min">Pro Sidorova Vovu </p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">7</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">8,2</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=DSlbtZkFrb0"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE_%D0%A1%D0%B8%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B0_%D0%92%D0%BE%D0%B2%D1%83"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0212593/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTdjZGQyMTgtMDA2Yi00YmMzLTliYzQtZGI1OGRkNzI5ZWQyXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_.jpg"
+                                         alt="Return of Kesha The Parrot">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Return of Kesha The Parrot</p>
+                                    <p class="name_min">Vozvrashchenie bludnogo popugaya </p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">7,8</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">7</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=VjCerNjoOXo"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B1%D0%BB%D1%83%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BF%D0%BE%D0%BF%D1%83%D0%B3%D0%B0%D1%8F_(%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA_1)"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0213309/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BMmNlMmVmZDctMjRiNC00NGE2LTlhNTItZjNmY2UzNjA2N2VmXkEyXkFqcGdeQXVyNjMxODMyODU@._V1_.jpg"
+                                         alt="Vovka v Tridevyatom tsarstve">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Vovka in the Far Eastern Territory</p>
+                                    <p class="name_min">Vovka v Tridevyatom tsarstve</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,1</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">8,6</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=2gh7JjbWbBM"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE_%D0%A1%D0%B8%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B0_%D0%92%D0%BE%D0%B2%D1%83"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0142851/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4NjcwMjUzNV5BMl5BanBnXkFtZTcwNzQwOTcyMQ@@._V1_.jpg"
+                                         alt="The Tale of Tsar Saltan">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">The Tale of Tsar Saltan</p>
+                                    <p class="name_min">Skazka o tsare Saltane</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">7,4</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">9</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=b3TQevs14CE"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://en.wikipedia.org/wiki/The_Tale_of_Tsar_Saltan_(1984_film)"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0050604/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ1Njg2MDYzNV5BMl5BanBnXkFtZTcwMzQ5ODcyMQ@@._V1_.jpg"
+                                         alt="The Humpbacked Horse">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">The Humpbacked Horse</p>
+                                    <p class="name_min">Konyok-Gorbunok</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">7,6</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">7,5</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies"
+                                       href="https://www.youtube.com/watch?v=BS1OIiRY1MM&feature=youtu.be"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://en.wikipedia.org/wiki/The_Humpbacked_Horse_(film)" target="_blank"><span>read</span>
+                                        review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0219233/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BY2RjMTVjNjktNTg3NC00Njg2LTg3NjMtMjg3ZTFhOGZmNmZlXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_.jpg"
+                                         alt="Last Year's Snow Was Falling">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Last Year's Snow Was Falling</p>
+                                    <p class="name_min">Padal proshlogodniy sneg</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,5</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">9</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=DwJznO6SqyM"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://en.wikipedia.org/wiki/Last_Year%27s_Snow_Was_Falling"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt1352408/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTBhM2E4OTMtMjZhNS00NzdmLWIyMGItNWY1ZTUwNTg4MGEwXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_.jpg"
+                                         alt="Last Year's Snow Was Falling">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Wow! A talking fish</p>
+                                    <p class="name_min">Ukh ty, govoryashchaya ryba! </p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,4</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">8</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=zGGWSd0YqGM"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://ru.wikipedia.org/wiki/%D0%A3%D1%85_%D1%82%D1%8B,_%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8F%D1%89%D0%B0%D1%8F_%D1%80%D1%8B%D0%B1%D0%B0!"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0210804/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BMmEzYzg2MDUtZTJmYi00N2UxLThiZWYtYjQ0ZGNjZjRhZjU5XkEyXkFqcGdeQXVyNjMxODMyODU@._V1_.jpg"
+                                         alt="The Flying Ship">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">The Flying Ship</p>
+                                    <p class="name_min">Letuchiy korabl</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">8</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=f3VxRhYbqiM"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D1%82%D1%83%D1%87%D0%B8%D0%B9_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D1%8C_(%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0487132/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTM2ZWIwMmItMjg0Zi00MzQwLTg4OGMtZTBlNDk3NDVmZmZlXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_.jpg"
+                                         alt="The Flying Ship">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">In the blue sea white foam</p>
+                                    <p class="name_min">V sinem more, v beloy pene...</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,4</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">8,2</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=mmF_imBU9nE"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://ru.wikipedia.org/wiki/%D0%92_%D1%81%D0%B8%D0%BD%D0%B5%D0%BC_%D0%BC%D0%BE%D1%80%D0%B5,_%D0%B2_%D0%B1%D0%B5%D0%BB%D0%BE%D0%B9_%D0%BF%D0%B5%D0%BD%D0%B5%E2%80%A6"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt1361319/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BMDhjMjc5MWYtM2NkMS00ODNkLWExYmUtZDNjOWZjNDg5MDhiXkEyXkFqcGdeQXVyMjQ0MzY3ODc@._V1_.jpg"
+                                         alt="Wow! The butter week ">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Wow! The butter week</p>
+                                    <p class="name_min">Ish ty, maslenitsa!</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">7</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://youtu.be/eV5bC7XS8AA" target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://ru.wikipedia.org/wiki/%D0%98%D1%88%D1%8C_%D1%82%D1%8B,_%D0%9C%D0%B0%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D1%86%D0%B0!"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0879824/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BZjFmZTRiYjctMWY0MS00ODFhLTliOTgtNzFlMWYxZTM5OTE1XkEyXkFqcGdeQXVyNjA0Mzc0MzI@._V1_.jpg"
+                                         alt="Caliph-Stork">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Caliph-Stork</p>
+                                    <p class="name_min">Khalif-aist</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">7,6</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">6,5</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=FCvQaQ7xRN4A"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BB%D0%B8%D1%84-%D0%B0%D0%B8%D1%81%D1%82_(%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo"
+                                   href="http://www.imdb.com/title/tt0201520/?ref_=tt_rec_tti" target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BNWRiYWZmNWYtNTAyOC00NzQ0LTg3MTctOGEyMTg1YjYxY2Q1XkEyXkFqcGdeQXVyNjMxODMyODU@._V1_.jpg"
+                                         alt="Cheburashka">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Cheburashka</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">7</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=0Xrr9mcdFvw"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview" href="https://en.wikipedia.org/wiki/Cheburashka_(film)"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt1259770/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BOWU0NTcyZjUtZWZiMi00ZjhiLTg2YWMtYmMxMTNkMmM0MjkyXkEyXkFqcGdeQXVyNjMxODMyODU@._V1_.jpg"
+                                         alt="Martynko">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Martynko</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">7,6</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">8,6</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=IkzPKs6AxO4"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%80%D1%82%D1%8B%D0%BD%D0%BA%D0%BE"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0211281/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BNmM2NjAzYWEtNDRkNi00YmQ1LWE2MmItN2U2N2ViNDU0ZjAzXkEyXkFqcGdeQXVyNjMxODMyODU@._V1_.jpg"
+                                         alt="The Bremen Town Musicians">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">The Bremen Town Musicians</p>
+                                    <p class="name_min">Bremenskie muzykanty </p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">7,5</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=3-HBgvJL5rI"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://en.wikipedia.org/wiki/The_Bremen_Town_Musicians_(film)"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt1074985/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjk3MzQ1ODUtMzNlOC00M2EzLWIwNDItM2IwYTBmYTcyZDRjXkEyXkFqcGdeQXVyNjMxODMyODU@._V1_SY1000_CR0,0,742,1000_AL_.jpg"
+                                         alt="Mama dlya mamontyonka ">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Mother for a mammoth</p>
+                                    <p class="name_min">Mama dlya mamontyonka</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">8,5</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://youtu.be/sVYMsNay8G0" target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BC%D0%B0_%D0%B4%D0%BB%D1%8F_%D0%BC%D0%B0%D0%BC%D0%BE%D0%BD%D1%82%D1%91%D0%BD%D0%BA%D0%B0"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0949326/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BODIyMTE1M2MtYWJiZS00MWRjLWEyM2UtMTdhYjQ2YjIzM2YxXkEyXkFqcGdeQXVyNjMxODMyODU@._V1_.jpg"
+                                         alt="The Scarlet Flower">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">The Scarlet Flower</p>
+                                    <p class="name_min">Alenkiy tsvetochek</p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">7,7</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">6,5</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://www.youtube.com/watch?v=kO0AFFI2pbc"
+                                       target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview"
+                                       href="https://en.wikipedia.org/wiki/The_Scarlet_Flower_(1952_film)"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="bl_companies__item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5ths">
+                                <a class="bl_companies__logo" href="http://www.imdb.com/title/tt0234355/"
+                                   target="_blank">
+                                    <img class="bl_companies__img"
+                                         src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTYyOWI0NTMtZWNmOS00MGViLWFhNTQtYWNjMzExNjAyODJjXkEyXkFqcGdeQXVyMjExNjgyMTc@._V1_SY1000_CR0,0,716,1000_AL_.jpg"
+                                         alt="Nu, pogodi!">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__bonus">
+                                    <p class="bl_companies__bonus_name">Well, Just You Wait!</p>
+                                    <p class="name_min">Nu, pogodi!/p>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_imdb js-imdb">8,7</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div class="bl_companies__rating">
+                                    <span class="bl_companies__rating_my js-myRating">8,8</span>
+                                    <span class="bl_companies__rating_full">/ 10</span>
+                                    <div class="bl_shortReviews">
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star full"></span>
+                                        <span class="icon-star half"></span>
+                                        <span class="icon-star empty"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-5ths">
+                                <div>
+                                    <a class="link_goToMovies" href="https://youtu.be/TRu_DUAaCwY" target="_blank">watch<span> cartoon</span></a>
+                                    <a class="link_readReview" href="https://en.wikipedia.org/wiki/Well,_Just_You_Wait!"
+                                       target="_blank"><span>read</span> review</a>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </li>
                 </ul>
 
 
             </div>
 
-            <div class="bl_ceo">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2 class="bl_ceo__title">Онлайн казино Вулкан в России - лидер среди азартных игровых
-                                клубов</h2>
-                            <p class="bl_ceo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est
-                                ante, scelerisque eu dui ac, accumsan hendrerit dui. Donec sollicitudin ex in quam
-                                laoreet feugiat. Etiam rhoncus tellus ut consequat hendrerit. Vestibulum sit amet
-                                lacinia nulla. Morbi suscipit enim ligula, vel feugiat ipsum luctus in. Nunc a molestie
-                                est, ac malesuada ligula. Quisque ante mi, congue nec urna eget, egestas dictum leo.
-                                Vivamus vitae placerat nunc, nec efficitur enim. Vestibulum volutpat enim in rutrum
-                                tempus. Ut mattis ipsum vitae magna hendrerit, quis semper libero accumsan.</p>
-                            <img class="bl_ceo__img" src="image/bg_casino.png" alt="casino">
-                            <p class="bl_ceo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est
-                                ante, scelerisque eu dui ac, accumsan hendrerit dui. Donec sollicitudin ex in quam
-                                laoreet feugiat. Etiam rhoncus tellus ut consequat hendrerit. Vestibulum sit amet
-                                lacinia nulla. Morbi suscipit enim ligula, vel feugiat ipsum luctus in. Nunc a molestie
-                                est, ac malesuada ligula. Quisque ante mi, congue nec urna eget, egestas dictum leo.
-                                Vivamus vitae placerat nunc, nec efficitur enim. Vestibulum volutpat enim in rutrum
-                                tempus. Ut mattis ipsum vitae magna hendrerit, quis semper libero accumsan.</p>
-                            <img class="bl_ceo__img" src="image/bg_casino.png" alt="casino">
-                            <p class="bl_ceo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est
-                                ante, scelerisque eu dui ac, accumsan hendrerit dui. Donec sollicitudin ex in quam
-                                laoreet feugiat. Etiam rhoncus tellus ut consequat hendrerit. Vestibulum sit amet
-                                lacinia nulla. Morbi suscipit enim ligula, vel feugiat ipsum luctus in. Nunc a molestie
-                                est, ac malesuada ligula. Quisque ante mi, congue nec urna eget, egestas dictum leo.
-                                Vivamus vitae placerat nunc, nec efficitur enim. Vestibulum volutpat enim in rutrum
-                                tempus. Ut mattis ipsum vitae magna hendrerit, quis semper libero accumsan.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
         </div>
+
     </main>
     <!-- ---------------------------------------- FOOTER --------------------------------------------------------- -->
     <footer class="footer">
-        <div class="bl_footer__wrapper">
-        <p class="bl_footer__text">2018 Вулкан казино Россия - Все права защищены</p>
-        <p class="bl_footer__links">
-            <a class="bl_footer__link" href="#">Мы в Google+</a>
-            <a class="bl_footer__link" href="#">| Мы в Facebook</a>
-            <a class="bl_footer__link" href="#">| Мы в Twitter</a>
-        </p>
-        <p class="bl_footer__text">По вопросам сотрудничества обращаться:<a class="bl_footer__link" href="mailto:editor@vulkanvulkan.com">editor@vulkanvulkan.com</a></p>
+        <div class="aboutMe">
+            <a href="https://codepen.io/BlackStar1991/pens/public/" target="_new">
+                <i class='fa fa-codepen'></i> my other Pens</a>
         </div>
     </footer>
 </div>

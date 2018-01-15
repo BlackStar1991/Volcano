@@ -10,8 +10,8 @@
 /*FONTS*/
 /*********************************************/
 
-@include font-face("Roboto - Thin", "../fonts/Roboto/RobotoThin", 400, normal, woff2 woff ttf );
-@include font-face("FontAwesome", "../fonts/FontAwesome/FontAwesome", 400, normal, woff2 woff ttf);
+//@include font-face("Roboto - Thin", "../fonts/Roboto/RobotoThin", 400, normal, woff2 woff ttf );
+//@include font-face("FontAwesome", "../fonts/FontAwesome/FontAwesome", 400, normal, woff2 woff ttf);
 
 /*********************************************/
 /*MAIN STYLES*/
@@ -38,7 +38,7 @@ body {
   flex-direction: column;
 
   min-height: 100vh;
-
+  background-color: #E6E2E3;
 }
 
 .wrapperBlock {
@@ -171,8 +171,7 @@ textarea {
   min-height: 28px;
   box-sizing: border-box;
   border-left: 2px solid #000;
-  //border: 2px solid #000;
-  a, button{
+  p, button{
     position: relative;
     display: block;
     margin:  0 auto;
@@ -191,6 +190,10 @@ textarea {
   }
   button{
     padding-right: 25px;
+    &:focus{
+      outline: none;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -219,6 +222,7 @@ textarea {
 }
 
 
+
 .bl_companies__item{
   width: 100%;
   position: relative;
@@ -226,84 +230,44 @@ textarea {
   padding: 15px 13px;
   box-sizing: border-box;
   margin-bottom: 4px;
-
-  //@for $i from 1 through 5 {
-  //&:nth-child(#{$i}) {
-  //    animation: scallingBlocks 0.3s linear (100ms*$i);
-  //    animation-fill-mode: forwards;
-  //  }
-  //}
-
 }
-
-
-@keyframes scallingBlocks {
-  0%{transform: scale(0.3);}
-  100%{transform: scale(1);}
-}
-
 
 .bl_companies__img{
+  max-height: 120px;
   display: block;
   margin: 0 auto;
-}
-
-.bl_companies__name{
-  color: $color_blue;
-  font-size: 16px;
-  text-align: center;
-  line-height: 40px;
-  letter-spacing: 0.33px;
-  font-weight: 600;
 }
 
 
 .bl_companies__bonus{
 
   color: $color_blue;
-  font-weight: 400;
   text-align: center;
 }
 
-.bl_companies__bonus_procent{
-  font-size: 37px;
-  letter-spacing: 0.74px;
+.bl_companies__bonus_name{
+  font-size: 28px;
   line-height: 40px;
+  font-weight: 700;
 }
-.bl_companies__bonus_view{
-  font-size: 15px;
-  letter-spacing: 0.34px;
-  line-height: 18px;
+.name_min{
+
+  font-size: 18px;
 }
-.bl_companies__bonus_option{
-  letter-spacing: 0.3px;
-  line-height: 18px;
-}
+
+
 
 .icon-sorter{
   &:after{
-    content: "";
+    content: "\21B9";
     position: absolute;
     right: 0;
-    top: 0;
-    @include sprite($icon-sorter);
+    top: -10px;
+    color: $color_blue;
+    font-weight: 300;
+    transform:rotate(270deg);
+    font-size: 28px;
     z-index: 2;
-  }
-}
-
-.bl_companies__recoil{
-  position: relative;
-  width: 100%;
-  color: $color_blue;
-  font-size: 37px;
-  font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 0.74px;
-  text-align: center;
-  &:after{
-    content:" %";
-    font-size: inherit;
-    color: inherit;
   }
 }
 
@@ -313,57 +277,63 @@ textarea {
   color: $color_blue;
   font-size: 37px;
   font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 0.74px;
 
 }
-.bl_companies__element{
-  font-size: 21px;
-  letter-spacing: 0.42px;
-}
-
-
 
 .bl_shortReviews {
 
   margin: 0 auto;
   height: 20px;
-  width: 105px;
+  width: 140px;
 
-  div {
+  span {
     position: relative;
     float: left;
-    width: 18px;
-    height: 18px;
-    margin-right: 2px;
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
     box-sizing: border-box;
   }
 }
 
+.icon-star {
+  font-size: 28px;
+  margin-top: 5px;
+  display: inline-block;
+  color: grey;
 
-.icon_star__full,
-.icon_star__empty {
-  &:after {
-    content: "\2605";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $color_yellow;
-    font-size: 28px;
+
+
+  &:before {
+    content:'\2605';
+  }
+  &:last-child {
+    margin-right: 0;
   }
 }
-
-.icon_star__empty {
-  &:after {
-    content: "\2606";
-  }
+.icon-star.full{
+  color:gold;
+}
+.icon-star.empty {
+  color: grey;
+}
+.icon-star.half:after {
+  content:'\2605';
+  color: gold;
+  position: absolute;
+  top: 0;
+  margin-left: -10px;
+  width: 10px;
+  overflow: hidden;
 }
 
 
 
-.link_goToCasino,
+
+
+.link_goToMovies,
 .link_readReview{
+  position: relative;
   margin: 0 auto;
   display: block;
   width: 100%;
@@ -374,10 +344,11 @@ textarea {
   text-transform: uppercase;
   color: #fff;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 40px;
   letter-spacing: 0.36px;
   transition: all, .2s;
+  overflow: hidden;
 
   &:hover,
   &:focus{
@@ -389,42 +360,6 @@ textarea {
 .link_readReview{
   margin: 6px auto;
   background-color: $color_btn2;
-}
-
-
-
-.bl_ceo{
-  position: relative;
-  width: 100%;
-
-}
-
-.bl_ceo__title{
-  display: block;
-  width: 100%;
-  margin: 35px auto 25px;
-  color: #282828;
-  font-size: 18px;
-
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.36px;
-}
-
-.bl_ceo__text{
-  width: 100%;
-  margin:15px auto;
-  color: #282828;
-  font-size: 12px;
-
-  line-height: 17px;
-  letter-spacing: 0.24px;
-}
-
-.bl_ceo__img{
-  width: 100%;
-
 }
 
 

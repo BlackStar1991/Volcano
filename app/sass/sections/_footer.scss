@@ -1,45 +1,18 @@
 .footer{
   margin-top: 27px;
   width: 100%;
-  min-height: 120px;
-
-  background: url("../image/bg_flag2.png") 50% 50% no-repeat;
-  background-size: cover;
+  min-height: 220px;
+  background: #EAE8E9 url("https://github.com/BlackStar1991/Pictures-for-sharing-/blob/master/Cartoons/footer_logo.jpg?raw=true") 50% 50% no-repeat;
+  background-size: contain;
 }
-
-.bl_footer__wrapper{
-  margin:29px auto 27px;
-  width: 100%;
-  max-width:384px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 400;
-
-}
-
-.bl_footer__text{
-  text-align: center;
-  line-height: 17px;
-  letter-spacing: 0.24px;
-  &:nth-last-child(1){
-    margin-top: 15px;
-  }
-}
-.bl_footer__link{
-  display: inline;
-  text-align: center;
-  line-height: 17px;
-  color: #fff;
-  letter-spacing: 0.24px;
-  &:hover,
-  &:focus{
-    color: #fff;
-    text-decoration: underline;
-  }
-}
-.bl_footer__links{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+.aboutMe a {
+  display: block;
+  width: 30%;
+  position: fixed;
+  bottom: 0.1%;
+  left: 20px;
+  color: rgba(0, 0, 0, .3);
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }

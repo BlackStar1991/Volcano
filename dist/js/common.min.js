@@ -1,41 +1,52 @@
-window.onload = function() {
+window.onload = function () {
 
-    var btnRating = $(".js-rating"),
-        btnPoint = $(".js-recoil"),
+    var btnName = $(".js-btnName"),
+        btnRating = $(".js-btnMyRating"),
+        btnPoint = $(".js-btnIMDB"),
         companiesLength = $(".bl_companies__item").length,
+        nameSortDirection = false,
         pointSortDirection = true,
         ratingSortDirection = true;
 
     var companyList = getCompanyList();
 
+
+    ///////// btn Name
+    btnName.on("click", function () {
+        nameSortDirection = !nameSortDirection;
+        byName = sortArrayByField(companyList, nameSortDirection, 'name');
+        renderCompanyListHtml(byName);
+    });
     ///////// btn Pointer
     btnPoint.on("click", function () {
-        pointSortDirection=!pointSortDirection;
+        pointSortDirection = !pointSortDirection;
         byPoint = sortArrayByField(companyList, pointSortDirection, 'point');
         renderCompanyListHtml(byPoint);
+
     });
 
     /////// btn Raiting
     btnRating.on("click", function () {
-        ratingSortDirection=!ratingSortDirection;
+        ratingSortDirection = !ratingSortDirection;
         byRating = sortArrayByField(companyList, ratingSortDirection, 'rating');
         renderCompanyListHtml(byRating);
     });
 
     function renderCompanyListHtml(companyList) {
-        for (var i = 0; i<companyList.length; i++) {
+        for (var i = 0; i < companyList.length; i++) {
             $(".bl_companies__item").eq(i).html(companyList[i].innerHtml);
         }
     }
 
     function getCompanyList() {
         var companyList = [];
-        for (var i=0; i< companiesLength; i++) {
-            var rating = $(".bl_companies__rating_current").eq(i).text();
-            var point =$(".bl_companies__recoil").eq(i).text().replace(',', '.');
-            var innerHtml =$(".bl_companies__item").eq(i).html().trim();
+        for (var i = 0; i < companiesLength; i++) {
+            var name = $(".bl_companies__bonus_name").eq(i).text().trim().toUpperCase();
+            var rating = parseFloat($(".js-myRating").eq(i).text().replace(',', '.'));
+            var point = $(".js-imdb").eq(i).text().replace(',', '.');
+            var innerHtml = $(".bl_companies__item").eq(i).html().trim();
 
-            companyList.push({'rating': rating, 'point': point, 'innerHtml': innerHtml});
+            companyList.push({'name': name, 'rating': rating, 'point': point, 'innerHtml': innerHtml});
         }
 
         return companyList;
@@ -44,16 +55,29 @@ window.onload = function() {
     function sortArrayByField(arrayToSort, direction, field) {
         // Use slice() to copy the array and not just make a reference
         var byField = arrayToSort.slice(0);
-        byField.sort(function(a,b) {
+        byField.sort(function (a, b) {
+
             if (direction === true) {
-                return  a[field] - b[field];
+                if (a[field] < b[field]) {
+                    return -1;
+                }
+                if (a[field] > b[field]) {
+                    return 1;
+                }
+                return 0;
+
             } else {
-                return  b[field] - a[field];
+                if (a[field] > b[field]) {
+                    return -1;
+                }
+                if (a[field] < b[field]) {
+                    return 1;
+                }
+                return 0;
+
             }
         });
 
         return byField;
     }
 };
-
-

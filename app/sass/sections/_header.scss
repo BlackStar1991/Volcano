@@ -1,21 +1,20 @@
 .header{
   width: 100%;
-  min-height:216px;
-  background: url("../image/bg_flag1.png") 50% 50% no-repeat;
+  min-height:273px;
+  background: url("https://github.com/BlackStar1991/Pictures-for-sharing-/blob/master/Cartoons/cartoon_header.jpg?raw=true") 50% 50% no-repeat;
   background-size: cover;
 }
 
-
-.logo_link{
-  display: block;
-  margin: 0 auto;
-  width: 264px;
-  height: 178px;
+.header_title{
+  margin-top: 10%;
+  margin-bottom: 0;
+  font-size: 5vw;
+  text-align: center;
+  font-family: 'Montez', cursive;
+  text-shadow: #fff 1px 1px 0, #fff -1px -1px 0,
+  #fff -1px 1px 0, #fff 1px -1px 0;
 }
 
-.logo_img{
-  display: block;
-  margin: 19px auto;
-}
+
 
 

@@ -11,24 +11,24 @@
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
 
-  .bl_recoil{
-    margin-top: -34px;
+  .header_title{
+    margin-top: 20%;
   }
 
   .bl_companies__bonus{
     &:before{
-      content: "Лучший бонус";
+      content: "Name";
       color:$color_textMain;
       font-size:inherit;
       font-weight:600;
     }
   }
 
-  .bl_companies__recoil{
+  .bl_companies__rating_my{
     &:before{
       display: block;
       vertical-align: top;
-      content: "Отдача";
+      content: "My Raiting";
       color:$color_textMain;
       font-size:18px;
       line-height: 18px;
@@ -36,11 +36,11 @@
     }
   }
 
-  .bl_companies__rating{
+  .bl_companies__rating_imdb{
     &:before{
       display: block;
       vertical-align: top;
-      content: "Рейтинг";
+      content: "IMDB Raiting";
       color:$color_textMain;
       font-size:18px;
       line-height: 18px;
@@ -57,23 +57,36 @@
   .bl_companies__full .col-md-5ths+a, .bl_companies__full .col-md-5ths+div{
     border-left: none;
   }
+  .bl_companies__img{
+    max-height: 270px;
+  }
 }
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {
 
-
+  .header_title{
+    margin-top: 0;
+    font-size: 3em;
+    line-height: 273px;
+  }
 
   .link_goToCasino span,
   .link_readReview span{
     display: none;
   }
 
+  .footer{
+    background-size: cover;
+  }
+
 }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
-
+  .header_title{
+    font-size: 2.5em;
+  }
 }
 
 /* Custom, iPhone Retina 320px */
